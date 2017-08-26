@@ -53,6 +53,9 @@ SimpleForm.setup do |config|
     # use the component :full_error, like:
     #
     # b.use :full_error, wrap_with: { tag: :span, class: :error }
+
+   
+    
   end
 
   # The default wrapper to be used by the FormBuilder.
@@ -101,7 +104,7 @@ SimpleForm.setup do |config|
   # config.item_wrapper_class = nil
 
   # How the label text should be generated altogether with the required text.
-  # config.label_text = lambda { |label, required, explicit_label| "#{required} #{label}" }
+  config.label_text = lambda { |label, required, explicit_label| "#{label}" }
 
   # You can define the class to use on all labels. Default is nil.
   # config.label_class = nil
@@ -166,4 +169,6 @@ SimpleForm.setup do |config|
 
   # Defines which i18n scope will be used in Simple Form.
   # config.i18n_scope = 'simple_form'
+
+
 end
