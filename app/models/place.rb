@@ -1,5 +1,3 @@
 class Place < ApplicationRecord
-  def index
-    @products = Place.all
-  end
+  belongs_to :user
 end
