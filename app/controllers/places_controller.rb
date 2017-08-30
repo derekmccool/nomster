@@ -25,7 +25,7 @@ class PlacesController < ApplicationController
 
     def update
       @place = Place.find(params[:id])
-      @olace.update_attributes(place_params)
+      @place.update_attributes(place_params)
       redirect_to root_path
     end
 
