@@ -13,7 +13,7 @@
         var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12;
+          zoom: 12,
           center: myLatLng  
         });
 
@@ -28,7 +28,7 @@
 
 
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARpAFRoTWDanLPU0wrtwhi12_LYjbSlK8&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJPJWEp6dH0cs2pxBG2ChKeoDsnEAI-6o&callback=initMap">
     </script>
 
     <div id="map"></div>
