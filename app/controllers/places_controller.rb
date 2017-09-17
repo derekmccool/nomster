@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
     def index
-      @places = Place.paginate(:page => params[:page], :per_page => 1)
+      @places = Place.paginate(:page => params[:page], :per_page => 5)
     end
 
     def new
@@ -22,6 +22,7 @@ class PlacesController < ApplicationController
     def show
       @place = Place.find(params[:id])
       @comment = Comment.new
+      @photo = Photo.new
     end
 
     def edit
@@ -59,7 +60,7 @@ class PlacesController < ApplicationController
     private
 
     def place_params
-      params.require(:place).permit(:name, :description, :address)
+      params.require(:place).permit(:name, :description, :address, :picture)
     end
 
 

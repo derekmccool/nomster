@@ -3,7 +3,7 @@ class Comment < ApplicationRecord
   belongs_to :place
 
   RATINGS = {
-    'one sar': '1_star',
+    '1 star': '1_star',
     '2 stars': '2_stars',
     '3 stars': '3_stars',
     '4 stars': '4_stars',
