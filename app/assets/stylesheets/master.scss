@@ -33,7 +33,7 @@ body{
 }
 
 .navbar-inverse .navbar-brand {
-  color: #E3E85A;
+  color: green;
   font-family:'Fugaz One', cursive;
 
 }
@@ -121,4 +121,19 @@ blockquote p {
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+a{
+  color: green;
+}
+a:link{
+  color: green;
+}
+
+a:visited{
+  color: #D5E026;
+}
+
+a:hover{
+  color: yellow;
 }
